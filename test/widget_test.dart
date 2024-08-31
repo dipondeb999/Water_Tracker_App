@@ -7,13 +7,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:water_tracker_app/main.dart';
+import 'package:water_tracker_app/presentation/screens/water_tracker_app.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const WaterTrackerApp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
